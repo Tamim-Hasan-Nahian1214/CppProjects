@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
 
+using namespace std;
+
 void addition()
 {
     int additionA;
@@ -68,32 +70,41 @@ void hypotenuse()
 
 int main()
 {
-    std::string input;
-    std::cout << "Enter The Operation (addition, subtraction, multiplication, division, hypotenuse): ";
-    std::cin >> input;
-    if (input == "addition")
-    {
-        addition();
-    }
-    else if (input == "subtraction")
-    {
-        subtraction();
-    }
-    else if (input == "multiplication")
-    {
-        multiplication();
-    }
-    else if (input == "division")
-    {
-        division();
-    }
-    else if (input == "hypotenuse")
-    {
-        hypotenuse();
-    }
-    else
-    {
-        std::cout << "Wrong Input" << std::endl;
+    while(true) {
+        std::string input;
+        std::cout << "Enter The Operation (addition, subtraction, multiplication, division, hypotenuse): ";
+        std::cin >> input;
+        if (input == "addition")
+        {
+            addition();
+        }
+        else if (input == "subtraction")
+        {
+            subtraction();
+        }
+        else if (input == "multiplication")
+        {
+            multiplication();
+        }
+        else if (input == "division")
+        {
+            division();
+        }
+        else if (input == "hypotenuse")
+        {
+            hypotenuse();
+        }
+        else
+        {
+            std::cout << "Wrong Input" << std::endl;
+        }
+        string again;
+        std::cout << "Do you want to calculate again? (y or n): ";
+        std::cin >> again;
+        if (again == "n")
+        {
+            break;
+        }
     }
     return 0;
 }
