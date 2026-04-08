@@ -25,7 +25,7 @@ int main()
             std::cout << p.use_count() << std::endl;
             break;
         case 4:
-            p2.lost();
+            p2.reset();
         }
     }
     return 0;
