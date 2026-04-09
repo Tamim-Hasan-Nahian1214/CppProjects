@@ -12,9 +12,11 @@ int main()
         std::cout << "Enter your input: ";
         std::cin >> input;
         if (auto temp = wp.lock()) {
-            std::cout << *temp << std::endl;
+            if (input == 1) {
+                std::cout << *temp << std::endl;
+            }
         }
-        else {
+        else if (wp.expired()) {
             std::cout << "Data expired" << std::endl;
         }
     }
