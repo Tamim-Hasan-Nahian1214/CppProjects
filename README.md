@@ -14,5 +14,5 @@ git clone https://github.com/Tamim-Hasan-Nahian1214/CppProjects.git
 <li><a href="https://github.com/BinarySort/CppProjects/blob/main/Number%20Guessing%20Game/numGuessingGame.cpp">Number Guessing Game</a></li>
 <li><a href="https://github.com/BinarySort/CppProjects/blob/main/Rock%20Paper%20Scissors%20Game/rockPaperScissors.cpp">Rock Paper Scissors Game</a></li>
 <li><a href="https://github.com/BinarySort/CppProjects/blob/main/calculators/calculator.cpp">Calculator</a></li>
-<li><a href="https://github.com/BinarySort/CppProjects/blob/main/Number%20Analyzer/NumAnalyzer.cpp>"</a></li>Number Analyzer</li>
+<li><a href="https://github.com/BinarySort/CppProjects/blob/main/Number%20Analyzer/NumAnalyzer.cpp"></a></li>Number Analyzer</li>
 
