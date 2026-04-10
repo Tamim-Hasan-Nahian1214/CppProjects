@@ -56,6 +56,13 @@ int main() {
                 else {
                     std::cout << "Account deleted" << std::endl;
                 }
+            case 5:
+                if (!UsernameObserver.expired() && !PasswordObserver.expired()) {
+                    std::cout << *username << std::endl;
+                }
+                else {
+                    std::cout << "Expired." << std::endl;
+                }
         }
         
     }
