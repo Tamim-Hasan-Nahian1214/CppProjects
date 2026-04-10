@@ -33,12 +33,29 @@ int main() {
                 }
                 break;
             case 2: 
-                std::cout << "Change Password" << std::endl;
-                std::cout << "Enter New Password: ";
-                std::cin >> ChangePassword;
-                *password = ChangePassword;
-                std::cout << "Your New Password is: " << *password << std::endl;
+                if (!UsernameObserver.expired() && !PasswordObserver.expired()) {
+                    std::cout << "Change Password" << std::endl;
+                    std::cout << "Enter New Password: ";
+                    std::cin >> ChangePassword;
+                    *password = ChangePassword;
+                    std::cout << "Your New Password is: " << *password << std::endl;
+                }
+                else {
+                    std::cout << "This account doesn't exist!" << std::endl;
+                }
                 break;
+            case 3:
+                username.reset();
+                password.reset();
+                std::cout << "Account Deleted Successfully." << std::endl;
+                break;
+            case 4:
+                if (!UsernameObserver.expired() && !PasswordObserver.expired()) {
+                    std::cout << "Account exists" << std::endl;
+                }
+                else {
+                    std::cout << "Account deleted" << std::endl;
+                }
         }
         
     }
