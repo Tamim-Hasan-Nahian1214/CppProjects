@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <algorithm>
 using namespace std;
 int main()
 {
@@ -12,7 +13,12 @@ int main()
 		std::cout << "Enter Mark " << i << ": ";
 		std::cin >> MarksPushInt;
 		Marks.push_back(MarksPushInt);
+		sort(Marks.begin(), Marks.end());
 	} 
+	int MaxMark = Marks.back();
+	std::cout << "Maximum Mark: " << MaxMark << std::endl;
+	int MinMark = Marks[0];
+	std::cout << "Minimum Mark: " << MinMark << std::endl;
 	return 0;
 }
 
