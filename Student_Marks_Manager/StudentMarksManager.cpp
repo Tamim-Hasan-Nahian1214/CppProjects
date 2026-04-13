@@ -15,6 +15,7 @@ int main()
 		Marks.push_back(MarksPushInt);
 		sort(Marks.begin(), Marks.end());
 	} 
+	std::cout << "-------------------------------" << std::endl;
 	int MaxMark = Marks.back();
 	std::cout << "Maximum Mark: " << MaxMark << std::endl;
 	int MinMark = Marks[0];
