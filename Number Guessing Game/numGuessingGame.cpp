@@ -6,10 +6,12 @@ using namespace std;
 int main() {
     int input;
     srand(time(0));
-    int random = rand() % 100 + 1;
+    int random = rand() % 99 + 1;
+    int attempts = 0;
     while(true) {
-        std::cout << "Enter a Number: ";
+        std::cout << "Enter a Number (1 to 100): ";
         cin >> input;
+        attempts += 1;
         if (input < random)
         {
             std::cout << "Too Low!" << std::endl;
@@ -26,4 +28,5 @@ int main() {
             break;
         }
     }
+    std::cout << attempts << std::endl;
 }
