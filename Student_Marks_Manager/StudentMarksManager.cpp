@@ -23,4 +23,3 @@ int main()
 	return 0;
 }
 
-// I didn't really added anything awsome I just added a random code never mind :) sorry for that.
